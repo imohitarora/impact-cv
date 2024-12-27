@@ -4,6 +4,7 @@ import { MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { FileTextIcon } from "lucide-react";
+import Link from "next/link";
 
 export function DashboardHeader() {
   const { setTheme, theme } = useTheme();
@@ -12,10 +13,12 @@ export function DashboardHeader() {
     <header className="border-b">
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <FileTextIcon className="h-6 w-6" />
-            <h1 className="text-xl font-bold">Resume Optimizer</h1>
-          </div>
+          <Link href="/">
+            <div className="flex items-center space-x-2">
+              <FileTextIcon className="h-6 w-6" />
+              <h1 className="text-xl font-bold">Resume Optimizer</h1>
+            </div>
+          </Link>
           <Button
             variant="ghost"
             size="icon"
