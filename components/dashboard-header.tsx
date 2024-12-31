@@ -16,7 +16,7 @@ export function DashboardHeader() {
           <Link href="/">
             <div className="flex items-center space-x-2">
               <FileTextIcon className="h-6 w-6" />
-              <h1 className="text-xl font-bold">Resume Optimizer</h1>
+              <h1 className="text-xl font-bold">Impact CV</h1>
             </div>
           </Link>
           <Button
